@@ -1,0 +1,31 @@
+@media screen and(max-width:1100px){
+  .hero {
+      height: 75vh;
+      &__title {
+        font-size: 48px;
+        margin: 120px 0 20px;
+      }
+      &__description {
+        font-size: 18px;
+      }
+      &__img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    
+}
+@media screen and(max-width:750px){
+.hero {
+    height: 85vh;
+
+  
+  &__title{
+    text-align: center;
+  }
+  &__description{
+    text-align: center;
+  }
+}
+  
+}

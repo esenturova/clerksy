@@ -1,0 +1,23 @@
+.human {
+  background-color: $colorbg;
+  padding: 130px 0 130px 0;
+  &__row {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    @include font($color-green, 48px, normal, $font-jose,40px);
+    max-width: 350px;
+  }
+  &__text {
+    @include font($color-green, 18px, normal, $font-noto, 27px);
+    padding-top: 27px;
+    max-width: 370px;
+  }
+  &__container {
+    max-width: 1000px;
+  }
+  &__content {
+    padding-left: 80px;
+  }
+}

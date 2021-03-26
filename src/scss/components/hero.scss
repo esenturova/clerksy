@@ -1,0 +1,29 @@
+.hero {
+  background-color: $color-green;
+  height: 85vh;
+  position: relative;
+  &__row {
+    align-items: center;
+  }
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: $color-white;
+    margin: 120px 0 20px;
+  }
+  &__description {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-white;
+    max-width:600px
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+  }
+}

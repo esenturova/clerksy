@@ -1,0 +1,17 @@
+.best {
+  background-color: $colorbg;
+    padding-bottom: 127px;
+  &__title {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #163a24;
+  }
+  &__row {
+    padding-right:105px;
+    padding-top: 66px;
+  }
+}
