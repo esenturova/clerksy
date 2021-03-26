@@ -1,0 +1,5 @@
+@media screen and (max-width: 750px) {
+  .col-5, .col-7, .col-6 {
+    width: 100%;
+  }
+}
