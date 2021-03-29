@@ -16,3 +16,7 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+.best .section__title{
+    @include font($color-green, 48px, 600, $font-jose);
+    
+}

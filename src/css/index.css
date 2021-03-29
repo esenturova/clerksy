@@ -120,6 +120,13 @@ a {
       flex-wrap: wrap;
 }
 
+.best .section__title {
+  color: #163A24;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Josefine Sans", sans-serif;
+}
+
 .header {
   background-color: #163A24;
   padding: 20px 0;
@@ -222,8 +229,6 @@ a {
   font-size: 48px;
   font-weight: normal;
   font-family: "Josefine Sans", sans-serif;
-  line-height: 40px;
-  max-width: 350px;
 }
 
 .human__text {
@@ -231,7 +236,6 @@ a {
   font-size: 18px;
   font-weight: normal;
   font-family: "Noto Sans", sans-serif;
-  line-height: 27px;
   padding-top: 27px;
   max-width: 370px;
 }
@@ -250,18 +254,41 @@ a {
 }
 
 .best__title {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 54px;
   text-align: center;
-  color: #163a24;
 }
 
 .best__row {
-  padding-right: 105px;
-  padding-top: 66px;
+  margin-top: 75px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.production {
+  background-color: #163A24;
+  padding: 66px 0 136px 0;
+}
+
+.production__title {
+  line-height: 54px;
+  text-align: center;
+  padding-bottom: 75px;
+  color: #FBFAF7;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Josefine Sans", sans-serif;
+}
+
+.production__text {
+  color: #FBFAF7;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  line-height: 27px;
+  text-align: center;
 }
 
 @media screen and (max-width: 750px) {

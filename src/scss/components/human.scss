@@ -6,11 +6,10 @@
     justify-content: space-between;
   }
   &__title {
-    @include font($color-green, 48px, normal, $font-jose,40px);
-    max-width: 350px;
+    @include font($color-green, 48px, normal, $font-jose);
   }
   &__text {
-    @include font($color-green, 18px, normal, $font-noto, 27px);
+    @include font($color-green, 18px, normal, $font-noto);
     padding-top: 27px;
     max-width: 370px;
   }

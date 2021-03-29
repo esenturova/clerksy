@@ -1,8 +1,16 @@
-@mixin font ($color,$size,$weight,$family,$height){
+@mixin font ($color, $size, $weight, $family){
     color:$color;
-    font-size:$size;
-    font-weight:$weight;
-    font-family:$family;
-    line-height:$height;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    
 }
-
+@mixin hover($bg-color, $opac){
+    background-color: $bg-color;
+    opacity: $opac;
+}
+@mixin flex-center($acenter:center, $jcenter:center){
+    display: flex;
+    align-items: $acenter;
+    justify-content: $jcenter;
+}

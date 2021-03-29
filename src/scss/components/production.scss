@@ -1,0 +1,16 @@
+.production {
+  background-color: $color-green;
+  padding: 66px 0 136px 0;
+  &__title {
+    line-height: 54px;
+    text-align: center;
+
+    padding-bottom: 75px;
+    @include font($color-white, 48px, 600, $font-jose);
+  }
+  &__text {
+    @include font($color-white, 18px, normal, $font-noto) font-style: normal;
+    line-height: 27px;
+    text-align: center;
+  }
+}
