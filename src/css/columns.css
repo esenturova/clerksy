@@ -1,5 +1,14 @@
+@media screen and (max-width: 1100px) {
+  .col-5, .col-7 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 750px) {
-  .col-5, .col-7, .col-6 {
+  .col-5, .col-7, .col-6, .col-3 {
     width: 100%;
   }
 }

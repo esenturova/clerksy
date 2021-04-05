@@ -1,16 +1,24 @@
-.production {
+.production{
   background-color: $color-green;
-  padding: 66px 0 136px 0;
-  &__title {
-    line-height: 54px;
-    text-align: center;
-
-    padding-bottom: 75px;
-    @include font($color-white, 48px, 600, $font-jose);
+  padding: 66px 0 140px;
+  &__title{
+      margin-bottom: 65px;
+      text-align: center;
+      color: $color-white;
   }
-  &__text {
-    @include font($color-white, 18px, normal, $font-noto) font-style: normal;
-    line-height: 27px;
-    text-align: center;
+  &__row{
+      margin: 0 -70px
+  }
+  &__item{
+      @include flex-center();
+      flex-direction: column;   
+   }
+   &__img{
+       margin-bottom: 25px;
+   }
+  &__text{
+      @include font($color-white, 18px, normal, $font-noto);
+      margin: 4px 0;
   }
 }
+

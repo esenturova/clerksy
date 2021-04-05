@@ -1,0 +1,54 @@
+.interest{
+    padding: 120px 0;
+    background-color: $color-milk;
+    &__title{
+        text-align: center;
+    }
+    &__text{
+        text-align: center;
+        margin: 25px 0 18px;
+        @include font($color-green, 18px, normal, $font-noto);
+    }
+    &__name{
+        display: block;
+        max-width: 160px;
+        margin: 20px 0;
+        @include font($color-green, 28px, 600, $font-jose);
+
+    }
+    &__name1{
+        display: block;
+        max-width: 301px;
+        margin: 20px 0;
+        @include font($color-green, 28px, 600, $font-jose);
+
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        box-shadow: 5px 5px 20px 0 #E9E4D5;
+        background-color: #FBFAF7;
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin-right: 40px;
+        box-shadow: 5px 5px 20px #dfd5b7;
+    }
+    &__link{
+        @include font($color-green, 16px, normal, $font-noto);
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: 25px;
+        &::before{
+            position: absolute;
+            content:url(../img/png/circle.png);
+            width: 10px;
+            height: 10px;
+            background-position: center;
+            background-size: cover;
+            left: -25px;
+            bottom: 50%;
+        }
+    }
+}

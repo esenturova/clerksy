@@ -107,9 +107,11 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .row {
@@ -120,7 +122,7 @@ a {
       flex-wrap: wrap;
 }
 
-.best .section__title {
+.section__title {
   color: #163A24;
   font-size: 48px;
   font-weight: 600;
@@ -268,17 +270,37 @@ a {
 
 .production {
   background-color: #163A24;
-  padding: 66px 0 136px 0;
+  padding: 66px 0 140px;
 }
 
 .production__title {
-  line-height: 54px;
+  margin-bottom: 65px;
   text-align: center;
-  padding-bottom: 75px;
   color: #FBFAF7;
-  font-size: 48px;
-  font-weight: 600;
-  font-family: "Josefine Sans", sans-serif;
+}
+
+.production__row {
+  margin: 0 -70px;
+}
+
+.production__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.production__img {
+  margin-bottom: 25px;
 }
 
 .production__text {
@@ -286,9 +308,115 @@ a {
   font-size: 18px;
   font-weight: normal;
   font-family: "Noto Sans", sans-serif;
-  font-style: normal;
-  line-height: 27px;
+  margin: 4px 0;
+}
+
+.employee {
+  padding: 115px 0 140px;
+  background-color: #F2EFE6;
+}
+
+.employee__title {
+  color: #163A24;
   text-align: center;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.employee__description {
+  text-align: center;
+  margin: 25px auto 5px;
+  max-width: 740px;
+  line-height: 1.5;
+  color: #163A24;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.employee__img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.interest {
+  padding: 120px 0;
+  background-color: #F2EFE6;
+}
+
+.interest__title {
+  text-align: center;
+}
+
+.interest__text {
+  text-align: center;
+  margin: 25px 0 18px;
+  color: #163A24;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.interest__name {
+  display: block;
+  max-width: 160px;
+  margin: 20px 0;
+  color: #163A24;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Josefine Sans", sans-serif;
+}
+
+.interest__name1 {
+  display: block;
+  max-width: 301px;
+  margin: 20px 0;
+  color: #163A24;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Josefine Sans", sans-serif;
+}
+
+.interest__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interest__item {
+  -webkit-box-shadow: 5px 5px 20px 0 #E9E4D5;
+          box-shadow: 5px 5px 20px 0 #E9E4D5;
+  background-color: #FBFAF7;
+  padding: 50px 40px;
+  border-radius: 15px;
+  margin-right: 40px;
+  -webkit-box-shadow: 5px 5px 20px #dfd5b7;
+          box-shadow: 5px 5px 20px #dfd5b7;
+}
+
+.interest__link {
+  color: #163A24;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.interest__link::before {
+  position: absolute;
+  content: url(../img/png/circle.png);
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  left: -25px;
+  bottom: 50%;
 }
 
 @media screen and (max-width: 750px) {

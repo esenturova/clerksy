@@ -1,0 +1,20 @@
+.employee{
+    padding: 115px 0 140px;
+    background-color: $color-milk;
+    &__title{
+        color: $color-green;
+        text-align: center;
+        max-width: 740px;
+        margin: 0 auto;    }
+    &__description{
+        text-align: center;
+        margin: 25px auto 5px;
+        max-width: 740px;
+        line-height: 1.5;
+        @include font($color-green, 18px , normal, $font-noto);
+    }
+    &__img{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

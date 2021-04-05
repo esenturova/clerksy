@@ -1,22 +1,26 @@
-.human {
-  background-color: $colorbg;
-  padding: 130px 0 130px 0;
-  &__row {
-    align-items: center;
-    justify-content: space-between;
+.human{
+  padding: 130px 0 115px;
+  background-color: $color-bg;
+  &__row{
+      align-items: center;
   }
-  &__title {
-    @include font($color-green, 48px, normal, $font-jose);
+  &__title{
+      @include font($color-green,48px, 600, $font-jose);
+      margin-bottom: 25px;
+      max-width: 365px;
   }
-  &__text {
-    @include font($color-green, 18px, normal, $font-noto);
-    padding-top: 27px;
-    max-width: 370px;
+  &__description{
+      @include font($color-green, 18px, normal, $font-noto);
+      max-width: 395px;
   }
-  &__container {
-    max-width: 1000px;
+  &__container{
+      max-width: 1000px;
   }
-  &__content {
-    padding-left: 80px;
+  &__content{
+      padding-left: 80px;
   }
+  .display-none{
+      display: none;
+  }
+
 }
